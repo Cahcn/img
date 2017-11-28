@@ -4,15 +4,12 @@
 
 我的个人主页：[https://cahcn.github.io/](https://cahcn.github.io/)
 
+
 码云提交代码、文件方式：http://git.mydoc.io/?t=154701
 ```+Markdown
 git pull origin master
-
 <这里需要修改/添加文件，否则与原文件相比就没有变动>
-
-git add .
-
+git add
 git commit -m "第一次提交"
-
 git push origin master
   ```

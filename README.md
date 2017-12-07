@@ -10,6 +10,6 @@
 git pull origin master
 <这里需要修改/添加文件，否则与原文件相比就没有变动>
 git add
-git commit -m "第一次提交"
+git commit -am "第一次提交"   // 别忘了add
 git push origin master
   ```

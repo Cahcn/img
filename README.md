@@ -21,11 +21,11 @@ git push origin master
 查看存储库中的大文件：
 ```+Markdown
 git rev-list --objects --all | grep -E `git verify-pack -v .git/objects/pack/*.idx | sort -k 3 -n | tail -10 | awk '{print$1}' | sed ':a;N;$!ba;s/\n/|/g'`
-  ```
+```
 
 改写历史，去除大文件
 ```+Markdown
 git filter-branch --tree-filter 'rm -f path/to/large/files' --tag-name-filter cat -- --all
 git push origin --tags --force
 git push origin --all --force
-  ```
+```

@@ -16,7 +16,7 @@ git commit -am "第一次提交"
 git push origin master
 ```
 
-如何减小仓库体积？
+[如何减小仓库体积？](https://git.mydoc.io/?t=83153)
 ```+Markdown
 查看存储库中的大文件
 git rev-list --objects --all | grep -E `git verify-pack -v .git/objects/pack/*.idx | sort -k 3 -n | tail -10 | awk '{print$1}' | sed ':a;N;$!ba;s/\n/|/g'`
@@ -32,6 +32,7 @@ git push origin --all --force
 [git如何撤销push](https://blog.csdn.net/chenyiyue/article/details/79461624)
 ```+Markdown
 有时候push到了github后，发现刚刚提交的commit有问题，如何撤销操作呢？
+
 首先，在本地回退版本，使用如下命令：
 `git reset --hard HEAD^`
 ^的个数表示回退几个版本，^^表示回到上上个版本。

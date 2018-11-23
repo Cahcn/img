@@ -27,8 +27,6 @@ git push origin --tags --force
 git push origin --all --force
 ```
 
----
-
 [git如何撤销push](https://blog.csdn.net/chenyiyue/article/details/79461624)
 ```+Markdown
 有时候push到了github后，发现刚刚提交的commit有问题，如何撤销操作呢？

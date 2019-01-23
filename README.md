@@ -13,7 +13,7 @@ git pull origin master
 
 git add .
 git commit -am "第一次提交"
-git push origin master
+git push origin master  //git push --force origin master
 ```
 
 [如何减小仓库体积？](https://git.mydoc.io/?t=83153)

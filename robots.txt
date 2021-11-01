@@ -1,0 +1,5 @@
+# robots.txt generated at http://tool.chinaz.com/robots/
+# Last update: Sep 8, 2019
+
+User-agent: *
+Disallow: /

@@ -4,11 +4,11 @@
 
 - 我的博客：[https://cahcn.github.io/](https://cahcn.github.io/)
 - GitHub仓库：[https://github.com/Cahcn/img](https://github.com/Cahcn/img)
-- 备份仓库：[https://gitee.com/bcler/fmdx](https://gitee.com/bcler/fmdx)
+- 备份仓库：[https://gitee.com/bcler/fmdx](https://gitee.com/bcler/fmdx) （不对外公开）
 
 ---
 
-1. [码云提交代码、文件方式](https://git.mydoc.io/?t=154701)
+1. [提交代码、文件方式](https://git.mydoc.io/?t=154701)
 ```+Markdown
 git pull origin master
 <这里需要修改/添加文件，否则与原文件相比就没有变动>
@@ -25,8 +25,8 @@ git rev-list --objects --all | grep -E `git verify-pack -v .git/objects/pack/*.i
 
 改写历史，去除大文件
 git filter-branch --tree-filter 'rm -f path/to/large/files' --tag-name-filter cat -- --all
-git push origin --tags --force
-git push origin --all --force
+git push [分支] --tags --force
+git push [分支] --all --force
 ```
 
 3. [git如何撤销push](https://blog.csdn.net/chenyiyue/article/details/79461624)
@@ -38,5 +38,5 @@ git reset --hard HEAD^
 ^的个数表示回退几个版本，^^表示回到上上个版本。
 
 然后，强制push: 
-git push origin HEAD --force
+git push [分支] HEAD --force
 ```
